@@ -25,35 +25,40 @@ It looks up the cheapest available flights from **Singapore (SIN)** to your sele
 
 ## 🗂️ Project Structure
 
+```
 python_flight_deal_finder/
 │
-├── main.py # Controls the overall workflow
-├── data_manager.py # Handles Sheety (Google Sheets) integration
-├── flight_search.py # Connects to Amadeus API for flight data
-├── notification_manager.py # Sends WhatsApp/SMS alerts using Twilio
-├── flight_data.py # (Optional) Defines a simple data class for flights
-├── .env # Stores all API keys and endpoints (not shared publicly)
-└── README.md # Project documentation
-
+├── main.py                   # Controls the overall workflow
+├── data_manager.py           # Handles Sheety (Google Sheets) integration
+├── flight_search.py          # Connects to Amadeus API for flight data
+├── notification_manager.py   # Sends WhatsApp/SMS alerts using Twilio
+├── flight_data.py            # (Optional) Defines a simple data class for flights
+├── .env                      # Stores all API keys and endpoints (not shared publicly)
+└── README.md                 # Project documentation
+```
 
 ---
 
 ## 🔐 Environment Setup
 
-1. Create a file named `.env` in your project root.
-2. Replace sensitive values as needed in .env file
+1. Create a file named `.env` in your project root.  
+2. Replace sensitive values as needed in the `.env` file.  
+
 
 ## 🚀 How to Run
 
-1. Install dependencies
-pip install requests python-dotenv twilio
+1. **Install dependencies**
+   ```bash
+   pip install requests python-dotenv twilio
+   ```
 
+2. **Run the main script**
+   ```bash
+   python main.py
+   ```
 
-2. Run the main script
-python main.py
-
-The program will:
-Fetch destination data from Google Sheets via Sheety.
-Search for flights from your departure location to each destination.
-Compare prices against your preset lowest price.
-Send a WhatsApp alert if a cheaper deal is found.
+### The program will:
+- Fetch destination data from Google Sheets via Sheety.
+- Search for flights from **Singapore (SIN)** to each destination.
+- Compare prices against your preset lowest price.
+- Send a WhatsApp alert if a cheaper deal is found.
