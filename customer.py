@@ -12,7 +12,7 @@ class Customer:
         self.email = ""
 
     def register(self):
-        print("Welcome to Nicole's Flight Club.")
+        print("Welcome to Akash's Flight Club.")
         print("We find the best flight deals and email you.")
         self.first_name = input("What is your first name? \n")
         self.last_name = input("What is your last name? \n")
