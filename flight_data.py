@@ -1,4 +1,4 @@
-# flight_data.py hi
+# flight_data.py
 class FlightData:
     def __init__(self, departure_city, dep_code, destination, dest_code, price, outbound_date, return_date, stop_overs=0, via_cities=None):
         self.departure_city = departure_city
